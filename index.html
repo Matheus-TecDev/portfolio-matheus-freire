@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio de Matheus Freire, desenvolvedor backend com atuação em Python e infraestrutura AWS." />
+    <meta name="author" content="Matheus Freire" />
+    <meta name="theme-color" content="#f5f4f0" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Matheus Freire — Desenvolvedor Backend" />
+    <meta property="og:description" content="Portfólio de Matheus Freire, desenvolvedor backend com atuação em Python e infraestrutura AWS." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem("mf-theme");
+          const theme = saved === "light" || saved === "dark"
+            ? saved
+            : "light";
+          document.documentElement.dataset.theme = theme;
+          document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#1d1e1c" : "#f5f4f0";
+        } catch (_) {}
+      })();
+    </script>
+    <title>Matheus Freire — Desenvolvedor Backend</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
