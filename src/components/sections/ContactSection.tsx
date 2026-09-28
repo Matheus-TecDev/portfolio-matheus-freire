@@ -10,7 +10,7 @@ export function ContactSection({ t }: { t: Translation }) {
           <a href={t.links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
           <a href={t.links.github} target="_blank" rel="noreferrer">GitHub</a>
         </nav>
-        <footer className="site-footer"><span>Matheus Freire</span><span>Fortaleza, CE · 2026</span></footer>
+        <footer className="site-footer"><span>Fortaleza, CE · 2026</span></footer>
       </div>
     </section>
   );

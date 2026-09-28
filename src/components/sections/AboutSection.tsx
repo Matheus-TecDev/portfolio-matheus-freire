@@ -10,11 +10,21 @@ export function AboutSection({ t }: { t: Translation }) {
         <header className="section-heading-simple"><h2 id="about-title">{t.about.title}</h2></header>
         <div className="about-copy">
           <p>{t.about.paragraphs[0]}</p>
-          <a href={credentialUrl} target="_blank" rel="noreferrer">
-            <strong>{t.about.credential}</strong>
-            <span>{t.about.credentialDetail}</span>
-            <span>{t.about.viewCredential}<ExternalIcon /></span>
-          </a>
+          <div className="about-credentials">
+            <div className="about-credential about-credential--primary">
+              <span className="about-credential__label">{t.about.certificationLabel}</span>
+              <a href={credentialUrl} target="_blank" rel="noreferrer">
+                <strong>{t.about.credential}</strong>
+                <span>{t.about.credentialDetail}</span>
+                <span>{t.about.viewCredential}<ExternalIcon /></span>
+              </a>
+            </div>
+            <div className="about-credential about-credential--secondary">
+              <span className="about-credential__label">{t.about.education.label}</span>
+              <strong>{t.about.education.title}</strong>
+              <span>{t.about.education.detail}</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
